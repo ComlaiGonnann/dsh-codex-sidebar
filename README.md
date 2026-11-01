@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/DSH-Plugin-blue?style=flat-square" alt="DSH Plugin" />
-  <img src="https://img.shields.io/badge/Version-1.3.8-green?style=flat-square" alt="Version 1.3.8" />
+  <img src="https://img.shields.io/badge/Version-1.3.9-green?style=flat-square" alt="Version 1.3.9" />
   <img src="https://img.shields.io/badge/License-MIT-purple?style=flat-square" alt="License MIT" />
   <img src="https://img.shields.io/badge/Vibe%20Coding-%E2%9C%A8-orange?style=flat-square" alt="Vibe Coding" />
 </p>
@@ -49,7 +49,10 @@ Transforms **DeepSeek Harness (DSH)** into a sleek, immersive **Codex-style dual
   Optimized CSS transform transitions and GPU repaint boundaries, completely eliminating frame drops during sidebar expand and collapse.
 
 - ⚡ **Idle & Debounced Sync Engine**  
-  120ms debounced synchronization combined with browser-native `requestIdleCallback` (with 300ms fallback timeout) and `__dshHtml` update fingerprinting, eliminating redundant DOM queries and innerHTML rewrites during high-frequency chat streaming.
+  120ms debounced synchronization combined with browser-native `requestIdleCallback` (with 300ms fallback timeout) and `__dshHtml` update fingerprinting; deeply optimized to filter high-frequency thinking stream updates and right-sidebar document preview / collaboration DOM noise.
+
+- 🪟 **Right Sidebar & Responsive Expand Control**  
+  Seamlessly aligns with DSH 0.2.1-rc.5, 0.2.2-alpha.2, and master responsive viewport rules (< 768px), adding polished Codex styling for the conversation header's `[data-sidebar-right-expand]` button.
 
 ### ⌨️ Keybindings
 
@@ -128,7 +131,10 @@ mklink /J "%USERPROFILE%\.dsh\packages\dsh-codex-rail" "path\to\dsh-codex-rail"
   深度优化 CSS Transform 与浏览器重绘机制，彻底解决原生在侧边栏折叠与展开时的掉帧卡顿。
 
 - ⚡ **智能空闲调度与高频 DOM 防抖 (Idle & Debounced Sync Engine)**  
-  采用 120ms 动态防抖与浏览器原生 `requestIdleCallback`（300ms 超时保护），配合活动栏按钮 `__dshHtml` 缓存指纹，彻底消除高频对话流与侧边栏变动时的多余 DOM 重排与重绘开销。
+  采用 120ms 动态防抖与浏览器原生 `requestIdleCallback`（300ms 超时保护），配合活动栏按钮 `__dshHtml` 缓存指纹；深度适配 DSH 0.2.1-rc.5 思维链流式推理展示、0.2.2-alpha.2 右侧栏文档预览与协作面板，彻底阻断高频重绘与多余 DOM 重排开销。
+
+- 🪟 **右侧栏与多端视口自适应联动 (Right Sidebar & Expand Control)**  
+  深度兼容 DSH master 及 0.2.2-alpha.2 视口宽度响应式规范，优化会话顶栏角落 `[data-sidebar-right-expand]` 展开/折叠控件质感，与 Codex 沉浸双列及浮动卡片保持毫秒级无缝联动。
 
 ### ⌨️ 快捷键速查
 

@@ -1,6 +1,6 @@
 {
   "name": "dsh-codex-rail",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "displayName": "Codex Rail & Integrated Deck",
   "description": "Transforms DSH into a sleek dual-column Codex workspace with an integrated Activity Bar, unified topbar, avatar quick access, and smooth session history navigation.",
   "type": "module",
